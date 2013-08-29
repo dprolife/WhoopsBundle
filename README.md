@@ -1,11 +1,12 @@
 
 WhoopsBundle
 ============
-This bundle integrates handy Whoops library, which decorated error displaying. The feature of bundle is that the web debug toolbar is applied.
+This bundle integrates handy Whoops library into Symfony2. It aplies webprofiler's toolbar as well.
 
 Any suggestions are appreciated.
 
-==INSTALATION==
+INSTALATION
+-----------
 Installing this bundle can be done through these simple steps:
 
 1. Add this bundle to your project as a composer dependency:
