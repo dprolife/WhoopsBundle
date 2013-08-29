@@ -1,0 +1,25 @@
+parameters:
+    dpro_whoops.class: Whoops\Run
+    dpro_whoops.handler.class: Whoops\Handler\PrettyPageHandler
+    dpro_whoops.configurator.class: dpro\WhoopsBundle\Configurator\WhoopsConfigurator
+
+services:
+
+    dpro_whoops:
+        class: %dpro_whoops.class%
+        configurator: [@dpro_whoops.configurator, configure]
+
+    dpro_whoops.configurator:
+        class: %dpro_whoops.configurator.class%
+        arguments: [@dpro_whoops.handler]
+        public: false
+
+    dpro_whoops.handler:
+        class: %dpro_whoops.handler.class%
+        public: false
+
+    dpro_whoops.exception.listener:
+        class: dpro\WhoopsBundle\ExceptionListener\ExceptionListener
+        arguments: [@event_dispatcher, @dpro_whoops]
+        tags:
+            - {name: kernel.event_subscriber }
