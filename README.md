@@ -1,4 +1,3 @@
-
 WhoopsBundle
 ============
 This bundle integrates handy Whoops library into Symfony2. It aplies webprofiler's toolbar as well.
@@ -16,7 +15,7 @@ Installing this bundle can be done through these simple steps:
         // ...
         require-dev: {
             // ...
-            "dprolife/whoops-bundle": "dev-master"
+            "dpro/whoops-bundle": "dev-master"
         }
     }
 ```
