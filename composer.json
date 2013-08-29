@@ -1,0 +1,13 @@
+{
+    "name": "dpro/whoops-bundle",
+    "autoload": {
+        "psr-0": { "dpro\\WhoopsBundle": "" }
+    },
+    "target-dir": "dpro/WhoopsBundle",
+    "require": {
+        "symfony/syfony": ">=2.1"
+    },
+    "require-dev": {
+        "filp/whoops":  "dev-master"
+    }
+}
