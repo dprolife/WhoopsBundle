@@ -1,11 +1,10 @@
-
 WhoopsBundle
 ============
 This bundle integrates handy Whoops library into Symfony2. It aplies webprofiler's toolbar as well.
 
 Any suggestions are appreciated.
 
-INSTALATION
+INSTALLATION
 -----------
 Installing this bundle can be done through these simple steps:
 
@@ -27,7 +26,7 @@ Installing this bundle can be done through these simple steps:
     public function registerBundles()
     {
         // ...
-        if (in_array($this->getEnvironment(), array('test'))) {
+        if (in_array($this->getEnvironment(), array('dev'))) {
             $bundles[] = new dpro\WhoopsBundle\dproWhoopsBundle();
         }
 
