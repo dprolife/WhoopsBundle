@@ -7,7 +7,7 @@
     "require": {
         "symfony/symfony": ">=2.1"
     },
-    "require-dev": {
+    "require": {
         "filp/whoops":  "dev-master"
     }
 }
