@@ -15,7 +15,7 @@ Installing this bundle can be done through these simple steps:
         // ...
         require-dev: {
             // ...
-            "dprolife/whoops-bundle": "dev-master"
+            "dpro/whoops-bundle": "dev-master"
         }
     }
 ```
