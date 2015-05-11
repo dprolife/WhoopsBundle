@@ -6,6 +6,6 @@
     "target-dir": "dpro/WhoopsBundle",
     "require": {
         "symfony/symfony": ">=2.1",
-        "filp/whoops":  "dev-master"
+        "filp/whoops":  "*"
     },
 }
